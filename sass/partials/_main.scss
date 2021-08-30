@@ -1,0 +1,69 @@
+.main-content {
+  @extend .width-container;
+  position: relative;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $color-secondary;
+    color: black;
+    font-family: $font-primary;
+    text-transform: uppercase;
+  }
+
+  &__item::before {
+    content: "|";
+    font-weight: 600;
+    padding-right: 4px;
+  }
+
+  &__image {
+    height: 300px;
+    background-image: url("../images/varmepumpe.jpg");
+    background-size: cover;
+  }
+
+  &__sertificate {
+    width: 180px;
+    background-color: $color-primary;
+    color: black;
+    font-family: "roboto";
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    padding: 1rem 0;
+  }
+
+  &__description {
+    background-color: $color-primary-light;
+    color: black;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__description p {
+    @extend .width-container;
+    padding: 1rem 0;
+  }
+}
+
+.secondary-content {
+ margin-top: 25px;  
+  background-color: $color-secondary;
+  color: black;
+
+  &__list {
+      margin: 0;
+      padding: 1rem 1rem 1rem 2rem;
+  }
+
+  &__item {
+      padding: 0.5rem 0
+  }
+}
