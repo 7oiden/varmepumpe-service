@@ -29,7 +29,7 @@ body {
 }
 
 .width-container, .header-container, .main-content, .main-content__description p, .contact-content {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
