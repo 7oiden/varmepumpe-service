@@ -1,0 +1,14 @@
+footer {
+  flex-shrink: 0;
+  background-color: $color-background;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-container::before {
+  content: "\00A9";
+  padding-right: 5px;
+}
