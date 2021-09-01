@@ -28,7 +28,7 @@ body {
           flex: 1 0 auto;
 }
 
-.width-container, .header-container, .main-content, .main-content__description p, .contact-content {
+.width-container, .header-container, .navigation__dropdown, .main-content, .main-content__description p, .contact-content {
   max-width: 95%;
   margin: 0 auto;
 }
@@ -43,6 +43,10 @@ h2 {
   text-transform: uppercase;
   color: #66d9af;
   font-size: 1.25rem;
+}
+
+h2 {
+  padding-left: 1rem;
 }
 
 .header-container {
@@ -70,11 +74,13 @@ h1 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  cursor: pointer;
 }
 
 .navigation__icon {
   color: #66d9af;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  padding-left: 1rem;
 }
 
 .navigation__dropdown {
@@ -82,15 +88,21 @@ h1 {
 }
 
 .navigation__list {
+  font-size: 1.25rem;
   list-style: none;
   text-transform: uppercase;
-  color: #66d9af;
-  padding: 0;
+  padding: 0 0 0.5rem 1rem;
   margin: 0;
 }
 
 .navigation__item {
-  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navigation__link {
+  cursor: pointer;
+  color: #66d9af;
+  text-decoration: none;
 }
 
 .main-content {
@@ -100,7 +112,7 @@ h1 {
 .main-content__list {
   list-style: none;
   margin: 0;
-  padding: 10px 0.5rem;
+  padding: 12px 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,8 +226,8 @@ h1 {
 }
 
 .contact-content__icon {
-  font-size: 2rem;
   padding-right: 1rem;
+  font-size: 1.75rem;
 }
 
 .contact-content__phone-number {

@@ -15,25 +15,34 @@ h1 {
 
 .navigation {
   order: 1;
+  cursor: pointer;
 
   &__icon {
     color: $color-primary;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    padding-left: 1rem;
   }
 
   &__dropdown {
     display: none;
+    @extend .width-container;
   }
 
   &__list {
+    font-size: 1.25rem;
     list-style: none;
     text-transform: uppercase;
-    color: $color-primary;
-    padding: 0;
+    padding: 0 0 0.5rem 1rem;
     margin: 0;
   }
 
   &__item {
-    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__link {
+    cursor: pointer;
+    color: $color-primary;
+    text-decoration: none;
   }
 }

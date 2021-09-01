@@ -5,7 +5,7 @@
   &__list {
     list-style: none;
     margin: 0;
-    padding: 10px 0.5rem;
+    padding: 12px 0.5rem;
     display: flex;
     justify-content: space-evenly;
     background-color: $color-secondary;
@@ -111,8 +111,8 @@
   }
 
   &__icon {
-    font-size: 2rem;
     padding-right: 1rem;
+    font-size: 1.75rem;
   }
 
   &__phone-number {
