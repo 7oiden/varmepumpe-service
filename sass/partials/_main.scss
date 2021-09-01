@@ -5,7 +5,7 @@
   &__list {
     list-style: none;
     margin: 0;
-    padding: 0.5rem;
+    padding: 10px 0.5rem;
     display: flex;
     justify-content: space-evenly;
     background-color: $color-secondary;
@@ -15,11 +15,11 @@
     font-weight: bold;
   }
 
-  &__item::before {
-    content: "|";
-    font-weight: 500;
-    padding-right: 4px;
-  }
+  // &__item::before {
+  //   content: "|";
+  //   font-weight: 500;
+  //   padding-right: 4px;
+  // }
 
   &__image {
     height: 300px;
@@ -99,22 +99,29 @@
     background-color: $color-primary-light;
     color: black;
     display: flex;
-    align-items: center;
-  }
-
-  &__icons {
-    font-size: 2rem;
-    display: flex;
     flex-direction: column;
+    padding: 0 0 1rem 2rem;
+  }
+
+  &__link {
+    display: flex;
     align-items: center;
-    padding: 1rem 1.5rem 1rem 2rem;
+    color: black;
+    text-decoration: none;
   }
 
-  &__item {
-    padding-top: 0.5rem;
+  &__icon {
+    font-size: 2rem;
+    padding-right: 1rem;
   }
 
-  &__email {
-    font-size: 1.25rem;
+  &__phone-number {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  &__email-address {
+    font-size: 1rem;
+    text-decoration: underline;
   }
 }
