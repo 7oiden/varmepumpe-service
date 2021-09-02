@@ -28,7 +28,7 @@ body {
           flex: 1 0 auto;
 }
 
-.width-container, .header-container, .navigation__dropdown, .main-content, .main-content__description p, .contact-content, .mont-content__heading, .mont-content__description, .mont-content__sec-heading {
+.width-container, .header-container, .navigation__dropdown, .main-content, .main-content__description p, .contact-content, .mont-content, .mont-content__heading, .mont-content__description, .mont-content__sec-heading {
   max-width: 95%;
   margin: 0 auto;
 }
@@ -253,7 +253,7 @@ h1 {
 .mont-content {
   background-color: #acdfcc;
   color: #2c2c2e;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .mont-content__heading {
@@ -266,8 +266,10 @@ h1 {
 }
 
 .mont-content__sec-heading {
+  font-size: 1.125rem;
   margin-top: 0;
   padding-top: 1rem;
+  text-decoration: underline;
 }
 
 footer {

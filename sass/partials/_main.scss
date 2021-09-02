@@ -129,9 +129,11 @@
 
 //styles for montering
 .mont-content {
+  @extend .width-container;
+
   background-color: $color-primary-light;
   color: $color-background;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 
   &__heading {
     @extend .width-container;
@@ -149,7 +151,9 @@
   &__sec-heading {
     @extend .width-container;
 
+    font-size: 1.125rem;
     margin-top: 0;
     padding-top: 1rem;
+    text-decoration: underline;
   }
 }
