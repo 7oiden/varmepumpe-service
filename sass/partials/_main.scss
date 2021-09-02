@@ -1,6 +1,7 @@
 .main-content {
   @extend .width-container;
   position: relative;
+  margin-bottom: 25px;
 
   &__list {
     list-style: none;
@@ -9,7 +10,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: $color-secondary;
-    color: black;
+    color: $color-background;
     font-family: $font-primary;
     text-transform: uppercase;
     font-weight: bold;
@@ -30,7 +31,7 @@
   &__sertificate {
     width: 180px;
     background-color: $color-primary;
-    color: black;
+    color: $color-background;
     font-family: "roboto";
     text-transform: uppercase;
     text-align: center;
@@ -43,7 +44,7 @@
 
   &__description {
     background-color: $color-primary-light;
-    color: black;
+    color: $color-background;
     font-weight: 500;
     margin: 0;
   }
@@ -55,9 +56,9 @@
 }
 
 .secondary-content {
-  margin-top: 25px;
+  margin-top: 0;
   background-color: $color-secondary;
-  color: black;
+  color: $color-background;
 
   &__list {
     margin: 0;
@@ -77,7 +78,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: $color-secondary;
-    color: black;
+    color: $color-background;
   }
 
   &__fig {
@@ -97,7 +98,7 @@
 
   &__container2 {
     background-color: $color-primary-light;
-    color: black;
+    color: $color-background;
     display: flex;
     flex-direction: column;
     padding: 0 0 1rem 2rem;
@@ -106,7 +107,7 @@
   &__link {
     display: flex;
     align-items: center;
-    color: black;
+    color: $color-background;
     text-decoration: none;
   }
 
@@ -123,5 +124,32 @@
   &__email-address {
     font-size: 1rem;
     text-decoration: underline;
+  }
+}
+
+//styles for montering
+.mont-content {
+  background-color: $color-primary-light;
+  color: $color-background;
+  margin-bottom: 0;
+
+  &__heading {
+    @extend .width-container;
+
+    padding: 1rem 0 1rem 0;
+    color: $color-background;
+  }
+
+  &__description {
+    @extend .width-container;
+
+    padding-bottom: 1rem;
+  }
+
+  &__sec-heading {
+    @extend .width-container;
+
+    margin-top: 0;
+    padding-top: 1rem;
   }
 }
