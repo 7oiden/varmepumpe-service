@@ -56,6 +56,8 @@
 }
 
 .secondary-content {
+  @extend .width-container;
+
   margin-top: 0;
   background-color: $color-secondary;
   color: $color-background;
@@ -101,7 +103,7 @@
     color: $color-background;
     display: flex;
     flex-direction: column;
-    padding: 0 0 1rem 2rem;
+    padding: 1rem 0 1rem 2rem;
   }
 
   &__link {
@@ -119,10 +121,13 @@
   &__phone-number {
     font-size: 1.5rem;
     padding-left: 1rem;
+    text-decoration: underline;
+    margin: 0;
   }
 
   &__email-address {
     font-size: 1rem;
+    padding-top: 0;
     text-decoration: underline;
   }
 }
