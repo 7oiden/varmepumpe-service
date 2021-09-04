@@ -2,31 +2,10 @@
   @extend .width-container;
   position: relative;
   margin-bottom: 25px;
+  height: 500px;
 
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 12px 0.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: $color-secondary;
-    color: $color-background;
-    font-family: $font-primary;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  // &__item::before {
-  //   content: "|";
-  //   font-weight: 500;
-  //   padding-right: 4px;
-  // }
-
-  &__image {
-    height: 300px;
-    background-image: url("../images/varmepumpe.jpg");
-    background-size: cover;
-  }
+  background-image: url("../images/varmepumpe.jpg");
+  background-size: cover;
 
   &__sertificate {
     width: 180px;
@@ -39,7 +18,44 @@
     position: absolute;
     left: 20px;
     top: 30px;
-    padding: 1rem 0;
+    padding: 1rem;
+
+    @media (min-width: 992px) {
+      width: 250px;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    @media (min-width: 992px) {
+      width: 50%;
+      right: 0;
+    }
+
+    @media (min-width: 1200px) {
+      width: 33%;
+      right: 0;
+    }
+  }
+
+  &__heading {
+    list-style: none;
+    margin: 0;
+    padding: 12px 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $color-secondary;
+    color: $color-background;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media (min-width: 992px) {
+      border-radius: 15px 0 0 0;
+    }
   }
 
   &__description {
@@ -62,14 +78,18 @@
   background-color: $color-secondary;
   color: $color-background;
 
+  @media (min-width: 992px) {
+      flex: 2;
+    }
+
   &__container {
     @extend .width-container;
+    padding-top: 1rem;
   }
 
   &__list {
     margin: 0;
     padding: 0 1rem 1rem 2rem;
-    border-bottom: 1px solid $color-background;
   }
 
   &__item {
@@ -84,17 +104,37 @@
 .contact-content {
   @extend .width-container;
 
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 992px) {
+    flex-direction: column;
+    flex: 1;
+  }
+
   &__container1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     background-color: $color-secondary;
     color: $color-background;
+    flex: 1;
+    padding-left: 10%;
+
+    @media (min-width: 576px) {
+      justify-content: center;
+      padding-left: 0;
+    }
   }
 
   &__fig {
     margin: 0;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 5% 1rem 0;
   }
 
   &__item {
@@ -112,7 +152,15 @@
     color: $color-background;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0 1rem 2rem;
+    flex: 1;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__container3 {
+    min-width: 250px;
+    margin: 0 auto;
   }
 
   &__link {
@@ -123,13 +171,12 @@
   }
 
   &__icon {
-    padding-right: 1rem;
     font-size: 1.75rem;
+    padding-right: 1rem;
   }
 
   &__phone-number {
     font-size: 1.5rem;
-    padding-left: 1rem;
     text-decoration: underline;
     margin: 0;
   }
@@ -170,8 +217,4 @@
     padding-top: 1rem;
     text-decoration: underline;
   }
-}
-
-#border-none {
-  border-bottom: none;
 }

@@ -23,4 +23,29 @@ body {
 .width-container {
   max-width: 95%;
   margin: 0 auto;
+
+  @media (min-width: 1200px) {
+    max-width: 80%;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 75%;
+  }
+}
+
+.secondary-wrapper {
+  @media (min-width: 992px) {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    gap: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1400px) {
+    width: 75%;
+  }
 }

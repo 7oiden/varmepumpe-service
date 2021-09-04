@@ -11,16 +11,28 @@
     color: white;
     text-decoration: none;
   }
-}
 
-h1 {
-  order: 2;
-  padding-right: 2rem;
+  &__logo {
+    order: 2;
+
+    @media (min-width: 992px) {
+      order: 1;
+    }
+  }
+
+  &__img {
+    width: 250px;
+    display: block;
+  }
 }
 
 .navigation {
   order: 1;
   cursor: pointer;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
 
   &__icon {
     color: $color-primary;
@@ -49,5 +61,44 @@ h1 {
     cursor: pointer;
     color: $color-primary;
     text-decoration: none;
+  }
+}
+
+.navigation-menu {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+    order: 2;
+  }
+
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    list-style: none;
+    padding-left: 2rem;
+    margin: 0;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+  }
+
+  &__link {
+    color: $color-primary;
+    text-decoration: none;
+    transition: border-bottom 0.5s;
+    border-bottom: 2px solid transparent;
+
+    &--active {
+      color: $color-secondary;
+    }
+  }
+
+  &__link:hover {
+    border-bottom: 2px solid $color-secondary;
   }
 }
